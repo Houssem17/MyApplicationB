@@ -15,7 +15,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver{
     public void onReceive(Context context, Intent intent)
     {
 
-       ArrayList<String> pack = intent.getStringArrayListExtra("package");
+        String pack = intent.getStringExtra("package");
         Log.i("BR" ,"Data received:  " + pack);
     }
 }
